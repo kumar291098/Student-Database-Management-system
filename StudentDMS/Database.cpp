@@ -18,7 +18,7 @@ Database::~Database() {
 void Database::connect() {
     try {
         driver = sql::mysql::get_mysql_driver_instance();
-        con = driver->connect("tcp://localhost:3306", "root", "Avnish@123");
+        con = driver->connect("tcp://localhost:3306", "root", "your_password");
         con->setSchema("student_db");
         std::cout << "Connected to the database successfully.\n";
     }
